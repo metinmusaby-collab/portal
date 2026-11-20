@@ -15,9 +15,8 @@ jobs:
         with:
           distribution: temurin
           java-version: '25'
-          cache: maven
       - name: Derle
-        run: mvn -B clean package
+        run: mvn -B -U package
       - name: Jar'ı yükle
         uses: actions/upload-artifact@v4
         with:

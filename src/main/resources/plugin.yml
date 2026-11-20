@@ -1,0 +1,13 @@
+name: PortalPlugin
+version: '${project.version}'
+main: com.metolox.portal.PortalPlugin
+api-version: '1.21'
+description: Basit portal plugini
+commands:
+  portal:
+    description: Portal komutları
+    usage: /portal <create|wand|tp|delete|list> [ad]
+permissions:
+  portal.admin:
+    description: Portal komutlarını kullanma izni
+    default: op
